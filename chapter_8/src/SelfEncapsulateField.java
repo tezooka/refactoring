@@ -27,16 +27,16 @@ public class SelfEncapsulateField {
             return _high;
         }
 
-        public void setHigh(int high) {
-            _high = high;
+        public void setHigh(int arg) {
+            _high = arg;
         }
 
         public int getLow() {
             return _low;
         }
 
-        public void setLow(int low) {
-            _low = low;
+        public void setLow(int arg) {
+            _low = arg;
         }
 
     }
@@ -54,8 +54,8 @@ public class SelfEncapsulateField {
             return _cap;
         }
 
-        public void setCap(int cap) {
-            _cap = cap;
+        public void setCap(int arg) {
+            _cap = arg;
         }
 
     }
