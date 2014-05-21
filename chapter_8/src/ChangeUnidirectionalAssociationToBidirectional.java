@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class ChangeBidirectionalAssociationToUnidirectional {
+public class ChangeUnidirectionalAssociationToBidirectional {
 
     private class Order {
 
