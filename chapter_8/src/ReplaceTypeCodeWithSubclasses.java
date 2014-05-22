@@ -1,73 +1,73 @@
 public class ReplaceTypeCodeWithSubclasses {
 
-	static abstract class Employee {
+    static abstract class Employee {
 
-		private final int _type;
+        private final int _type;
 
-		static final int ENGINEER = 0;
+        static final int ENGINEER = 0;
 
-		static final int SALESMAN = 1;
+        static final int SALESMAN = 1;
 
-		static final int MANGER = 2;
+        static final int MANGER = 2;
 
-		private Employee(int type) {
-			_type = type;
-		}
+        private Employee(int type) {
+            _type = type;
+        }
 
-		static Employee create(int type) {
-			switch (type) {
-			case ENGINEER:
-				return new Engineer();
-			case SALESMAN:
-				return new Salesman();
-			case MANGER:
-				return new Manager();
-			default:
-				throw new IllegalArgumentException("タイプコードの値が不正");
-			}
-		}
+        static Employee create(int type) {
+            switch (type) {
+            case ENGINEER:
+                return new Engineer();
+            case SALESMAN:
+                return new Salesman();
+            case MANGER:
+                return new Manager();
+            default:
+                throw new IllegalArgumentException("タイプコードの値が不正");
+            }
+        }
 
-		abstract int getType();
+        abstract int getType();
 
-	}
+    }
 
-	class Engineer extends Employee {
+    static class Engineer extends Employee {
 
-		public Engineer() {
-			super(ENGINEER);
-		}
+        public Engineer() {
+            super(ENGINEER);
+        }
 
-		@Override
-		public int getType() {
-			return Employee.ENGINEER;
-		}
+        @Override
+        public int getType() {
+            return Employee.ENGINEER;
+        }
 
-	}
+    }
 
-	class Salesman extends Employee {
+    static class Salesman extends Employee {
 
-		public Salesman() {
-			super(SALESMAN);
-		}
+        public Salesman() {
+            super(SALESMAN);
+        }
 
-		@Override
-		public int getType() {
-			return Employee.SALESMAN;
-		}
+        @Override
+        public int getType() {
+            return Employee.SALESMAN;
+        }
 
-	}
+    }
 
-	class Manager extends Employee {
+    static class Manager extends Employee {
 
-		public Manager() {
-			super(MANGER);
-		}
+        public Manager() {
+            super(MANGER);
+        }
 
-		@Override
-		public int getType() {
-			return Employee.MANGER;
-		}
+        @Override
+        public int getType() {
+            return Employee.MANGER;
+        }
 
-	}
+    }
 
 }

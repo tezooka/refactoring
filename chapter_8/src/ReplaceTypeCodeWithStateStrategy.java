@@ -62,7 +62,7 @@ public class ReplaceTypeCodeWithStateStrategy {
 
     }
 
-    class Engineer extends EmployeeType {
+    static class Engineer extends EmployeeType {
 
         @Override
         int getTypeCode() {
@@ -71,7 +71,7 @@ public class ReplaceTypeCodeWithStateStrategy {
 
     }
 
-    class Salesman extends EmployeeType {
+    static class Salesman extends EmployeeType {
 
         @Override
         int getTypeCode() {
@@ -80,7 +80,7 @@ public class ReplaceTypeCodeWithStateStrategy {
 
     }
 
-    class Manager extends EmployeeType {
+    static class Manager extends EmployeeType {
 
         @Override
         int getTypeCode() {
