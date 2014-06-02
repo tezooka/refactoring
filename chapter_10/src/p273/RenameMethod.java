@@ -1,4 +1,4 @@
-package chapter_10;
+package p273;
 
 public class RenameMethod {
 
